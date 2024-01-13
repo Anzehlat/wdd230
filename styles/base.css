@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'playfair display', serif;
+    background-color: #f4f4f4;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    font-family: 'playfair display', serif;
+    background-color: #e9c490;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    border-radius: 15%;
+    border-style: double;
+}
+
+header span {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #b0d0ae;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    background-color: #e9c490;
+    padding: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    width:auto;
+    color: #fff;
+    border-style:double;
+}
+
+.card {
+    background-color: #ecddc8;
+    padding: 20px;
+    margin-top: 20px
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #b0d0ae;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Adjustments for small screens */
+@media screen and (max-width: 768px) {
+    header img {
+        width: 80px;
+    }
+
+    header span {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a:hover {
+        border: 1px solid #000000;
+    }
+
+    nav li {
+        margin-bottom: 0;
+    }
+
+    main {
+        max-width: 100%;
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* larger screen*/
+@media screen and (min-width: 648px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+}
+}
+.card ul {
+    list-style-type: none;
+}

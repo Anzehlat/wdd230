@@ -1,0 +1,98 @@
+body {
+    font-family: 'playfair display', serif;
+    background-color: white;
+    color: #000000;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #a68b03;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    text-align: center;
+}
+
+header span {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+nav {
+    background-color: #77abd9;
+    padding: 10px;
+}
+
+#hamburgerButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 44px;
+    text-align: left;
+    padding: .25rem 2vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+#hamburgerButton.open::before {
+    content: "x";
+}
+
+@media screen and (min-width: 768px) {
+    #hamburgerButton {
+        display: none;
+    }
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+hero img {
+    display: flex;
+    max-width: fit-content;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #cedae3;
+    padding: 20px;
+    margin-top: 20px
+}
+
+main {
+    background-color: #a9c6d9;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #a68b03;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

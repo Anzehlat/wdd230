@@ -14,8 +14,8 @@ body {
 
 header {
     font-family: 'playfair display', serif;
-    background-color: #e9c490;
-    color: #ffffff;
+    background-color: #246655;
+    color: #cedae3;
     padding: 20px;
     text-align: center;
 }
@@ -33,7 +33,7 @@ header span {
 }
 
 nav {
-    background-color: #b0d0ae;
+    background-color: #cedae3;
     padding: 10px;
 }
 
@@ -49,7 +49,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #ffffff;
+    color: #246655;
     font-weight: bold;
 }
 
@@ -61,7 +61,7 @@ main {
 }
 
 h2 {
-    background-color: #e9c490;
+    background-color: #246655;
     padding: 10px;
     margin-top: 0px;
     margin-bottom: 20px;
@@ -71,14 +71,14 @@ h2 {
 }
 
 .card {
-    background-color: #ecddc8;
+    background-color: #cedae3;
     padding: 20px;
     margin-top: 20px
 }
 
 footer {
     font-family: 'Roboto', sans-serif;
-    background-color: #b0d0ae;
+    background-color: #246655;
     color: #fff;
     padding: 10px;
     text-align: center;

@@ -37,6 +37,44 @@ nav {
     padding: 10px;
 }
 
+#myButton::before {
+    content: "=";
+}
+
+#myButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 44px;
+    text-align: right;
+    padding: .25rem 2vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ul.menuLinks li a {
+    display: block;
+    padding: 75rem 2vw;
+    color:#fff;
+    text-decoration: none;
+}
+
+li.current-menu-item a {
+    background-color: #000000;
+}
+
+ul.menuLinks {
+    display: none;
+    list-style-type: none;
+}
+
+#myButton.open::before {
+    content: "x";
+}
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -51,6 +89,15 @@ nav a {
     text-decoration: none;
     color: #246655;
     font-weight: bold;
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
 }
 
 main {

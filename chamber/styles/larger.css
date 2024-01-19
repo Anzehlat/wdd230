@@ -1,5 +1,6 @@
-@media screen and (min-width: 768px) {
+/* larger.css */
 
+@media screen and (min-width: 768px) {
     header {
         padding: 30px;
     }
@@ -20,15 +21,13 @@
         font-size: 1.2em;
     }
 
-    
-
     main {
         padding: 30px;
     }
 
     .card {
         padding: 30px;
-        margin-top: 30px;
+        margin-top: 20px; /* Adjusted margin for consistency */
     }
 
     footer {

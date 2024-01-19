@@ -1,22 +1,24 @@
-const hamburgerElement = document.querySelector('#myButton');
+const currentYear = new Date().getFullYear();
+
+document.getElementById('currentYear').textContent = currentYear;
+
+const hamburgerButton = document.getElementById('hamburgerButton');
 const navElement = document.querySelector('.menuLinks');
 
-hamburgerElement.addEventListener('click', () => {
-	navElement.classList.toggle('open');
-	hamburgerElement.classList.toggle('open');
+hamburgerButton.addEventListener('click', () => {
+    navElement.classList.toggle('open');
+    hamburgerButton.classList.toggle('open');
 });
 
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 
 modeButton.addEventListener("click", () => {
-	if (modeButton.textContent.includes("🕶️")) {
-		main.style.background = "#000";
-		main.style.color = "#fff";
-		modeButton.textContent = "🔆";
-	} else {
-		main.style.background = "#eee";
-		main.style.color = "#000";
-		modeButton.textContent = "🕶️";
-	}
+    main.classList.toggle('dark-mode');
+    
+    if (modeButton.textContent.includes("🕶️")) {
+        modeButton.textContent = "🔆";
+    } else {
+        modeButton.textContent = "🕶️";
+    }
 });

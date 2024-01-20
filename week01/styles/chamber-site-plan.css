@@ -55,3 +55,38 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 30px;
+    }
+
+    header img {
+        width: 120px;
+    }
+
+    header span {
+        font-size: 1.5em;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 1.2em;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    .card {
+        padding: 30px;
+        margin-top: 20px;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}

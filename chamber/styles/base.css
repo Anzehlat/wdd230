@@ -37,6 +37,9 @@ nav {
     display: block;
 }
 
+.menuLinks.open {
+    display: block;
+}
 
 #hamburgerButton {
     font-size: 2rem;
@@ -58,7 +61,7 @@ nav {
 
 @media screen and (min-width: 768px) {
     #hamburgerButton {
-        display: none;
+        display: block;
     }
 }
 

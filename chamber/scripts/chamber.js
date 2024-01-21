@@ -7,6 +7,7 @@ const hamburgerButton = document.getElementById('hamburgerButton');
 const navElement = document.querySelector('.menuLinks');
 
 hamburgerButton.addEventListener('click', () => {
+    console.log('Hamburger button clicked');
     navElement.classList.toggle('open');
     hamburgerButton.classList.toggle('open');
 });

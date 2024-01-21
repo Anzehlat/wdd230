@@ -33,6 +33,11 @@ nav {
     padding: 10px;
 }
 
+.menuLinks.open {
+    display: block;
+}
+
+
 #hamburgerButton {
     font-size: 2rem;
     background: none;

@@ -21,6 +21,14 @@
         font-size: 1.2em;
     }
 
+.menuLinks {
+    display: inside; /* This should be your default display style for larger screens */
+}
+
+.menuLinks.open {
+    display: block; /* This style should be applied when the menu is open on larger screens */
+}
+
     main {
         padding: 30px;
     }

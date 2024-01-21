@@ -46,13 +46,28 @@ nav {
     margin-top: 20px;
 }
 
-.menuLinks.open {
-    display: block;
+.menuLinks {
+    display: inside;
 }
 
 .menuLinks.open {
     display: block;
 }
+
+.menuLinks.open {
+    display: block; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #294161;
+    padding: 20px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+}
+
 
 #hamburgerButton {
     font-size: 2rem;
@@ -74,7 +89,7 @@ nav {
 
 @media screen and (min-width: 768px) {
     #hamburgerButton {
-        display: block;
+        display: none;
     }
 }
 
@@ -113,6 +128,24 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+    .menuLinks {
+        display: none; /* Hide menu links by default on smaller screens */
+    }
+
+    .menuLinks.open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #294161;
+        padding: 20px;
+        position: absolute;
+        top: 243px; /* Adjust the top position to align with the header */
+        right: 0;
+        width: 100%;
+    }
+    
     header img {
         width: 80px;
     }

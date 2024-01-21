@@ -47,7 +47,7 @@ nav {
 }
 
 .menuLinks {
-    display: inside;
+    display: open;
 }
 
 .menuLinks.open {

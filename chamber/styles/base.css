@@ -33,6 +33,11 @@ nav {
     padding: 10px;
 }
 
+.join-link {
+    text-align: center;
+    color: #fff;
+}
+
 .menuLinks.open {
     display: block;
 }

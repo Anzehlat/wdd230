@@ -2,8 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
+}  
 
 body {
     font-family: 'playfair display', serif;
@@ -11,6 +10,8 @@ body {
     color: #fff;
     margin: 0;
     text-align: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 header {
@@ -112,6 +113,45 @@ nav a {
     font-weight: bold;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .sidebar {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .image {
+    position: relative;
+    overflow: hidden;
+    background-color: #ddd;
+    padding-bottom: 100%;
+    cursor: pointer;
+  }
+  
+  .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .image:hover img {
+    transform: scale(1.1);
+  }
+
 .card {
     display: flex;
     flex-direction: column;
@@ -132,7 +172,7 @@ main {
 
 @media screen and (max-width: 768px) {
     .menuLinks {
-        display: none; /* Hide menu links by default on smaller screens */
+        display: none; 
     }
 
     .menuLinks.open {
@@ -144,7 +184,7 @@ main {
         background-color: #294161;
         padding: 20px;
         position: absolute;
-        top: 243px; /* Adjust the top position to align with the header */
+        top: 243px; 
         right: 0;
         width: 100%;
     }

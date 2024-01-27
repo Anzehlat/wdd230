@@ -97,24 +97,18 @@
     <script src="scripts/getDates.js"></script>
 
     <script>
-        // Check if localStorage is supported
         if (typeof(Storage) !== "undefined") {
-            // Retrieve visit count from localStorage
             var visitCount = localStorage.getItem("visitCount");
 
-            // If visitCount is null, set it to 0
             if (visitCount === null) {
                 visitCount = 0;
             }
 
-            // Increment visitCount and update localStorage
             visitCount++;
             localStorage.setItem("visitCount", visitCount);
 
-            // Update the page with the visit count
             document.getElementById("visitCount").innerHTML = visitCount;
         } else {
-            // If localStorage is not supported, display a message
             document.getElementById("pageVisitCounter").innerHTML = "Page visits: localStorage not supported.";
         }
     </script>

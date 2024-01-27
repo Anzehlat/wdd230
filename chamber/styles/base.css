@@ -132,7 +132,7 @@ nav a {
   
   .image {
     position: relative;
-    overflow: hidden;
+    overflow:auto;
     background-color: #ddd;
     padding-bottom: 100%;
     cursor: pointer;

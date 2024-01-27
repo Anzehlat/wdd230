@@ -38,6 +38,19 @@
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
 
+        <picture>
+            <!-- Mobile Image -->
+            <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+            <!-- Larger Screens Image -->
+            <source media="(min-width: 401px) and (max-width: 1000px)" srcset="images/hero-large.webp">
+            <!-- Fallback for non-supporting browsers -->
+            <img src="images/hero-large.webp" alt="Draper, Utah Temple" style="width: 100%;">
+        </picture>
+
+        <div class="overlay">
+            <p>Draper, Utah</p>
+        </div>
+
         <section class="card">
             <h2>Learning Activities</h2>
             <ul>
@@ -61,7 +74,20 @@
             <p>Weather: Expect Snow</p>
             <p>Number of Visits: 100</p>
         </section>
+
+         <p id="pageVisitCounter">Page visits: <span id="visitCount">0</span></p>
+        </section>
     </main>
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48629.40415865144!2d-111.77486725918372!3d40.37920618974189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d841f419bc7e7%3A0xa6bd1ff2b4bd2c1e!2sPleasant%20Grove%2C%20UT!5e0!3m2!1sen!2sus!4v1706369831619!5m2!1sen!2sus" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
 
     <footer>
         <p>&copy; <span id="currentYear"></span> Anzehla Wolfley - Utah, USA</p>
@@ -69,5 +95,28 @@
     </footer>
 
     <script src="scripts/getDates.js"></script>
+
+    <script>
+        // Check if localStorage is supported
+        if (typeof(Storage) !== "undefined") {
+            // Retrieve visit count from localStorage
+            var visitCount = localStorage.getItem("visitCount");
+
+            // If visitCount is null, set it to 0
+            if (visitCount === null) {
+                visitCount = 0;
+            }
+
+            // Increment visitCount and update localStorage
+            visitCount++;
+            localStorage.setItem("visitCount", visitCount);
+
+            // Update the page with the visit count
+            document.getElementById("visitCount").innerHTML = visitCount;
+        } else {
+            // If localStorage is not supported, display a message
+            document.getElementById("pageVisitCounter").innerHTML = "Page visits: localStorage not supported.";
+        }
+    </script>
 </body>
 </html>

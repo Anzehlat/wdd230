@@ -1,0 +1,194 @@
+/* Reset some default styles */
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+main h1 {
+    padding-left: 43%;
+    color:#246655;
+}
+
+main {
+    margin-bottom: 2%;
+}
+
+/* Apply basic styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    font-family: 'playfair display', serif;
+    background-color: #246655;
+    color: #cedae3;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    border-radius: 15%;
+    border-style: double;
+}
+
+header span {
+    display: block;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+
+nav {
+    background-color: #cedae3;
+    padding: 10px;
+}
+
+
+#hamburgerButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 44px;
+    text-align: left;
+    padding: .25rem 2vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+#hamburgerButton.open::before {
+    content: "x";
+}
+
+@media screen and (min-width: 768px) {
+    #hamburgerButton {
+        display: none;
+    }
+}
+
+main.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #246655;
+    font-weight: bold;
+}
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+/* Style the form container */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Apply spacing between form elements */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+button {
+    margin-bottom: 16px;
+}
+
+/* Apply root-level CSS variables */
+:root {
+    --primary-color: #246655;
+    --background-color: #f2f2f2;
+    --border-radius: 4px;
+}
+
+/* Apply styles using the defined CSS variables */
+body {
+    background-color: var(--background-color);
+}
+
+form {
+    background-color: #cedae3;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    color: var(--primary-color);
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #207dbb;
+}
+
+footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #246655;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Adjustments for small screens */
+@media screen and (max-width: 768px) {
+    header img {
+        width: 80px;
+    }
+
+    header span {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a:hover {
+        border: 1px solid #000000;
+    }
+
+    nav li {
+        margin-bottom: 0;
+    }
+}
+
+    @media screen and (min-width: 648px) {
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+    }
+    }

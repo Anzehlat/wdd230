@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/formLarge.css">
+    <title>Web Form</Form></title>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <img src="images/ProfilePic.jpg" alt="Anzehla Wolfley's Profile Image">
+        <span>Anzehla Wolfley</span>
+        <h1>Web Development Course</h1>
+        <button id="mode">&#127769;</button> 
+    </header>
+    <nav>
+        <button id="hamburgerButton">&#8801;</button>
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/discover.html">Discover</a></li>
+            <li><a href="#form">Form</a></li>
+            <li><a href="week02/design.html">Design</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Web Form</h1>
+        <form action="record.html" method="get">
+            <!-- Username Field -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]+" title="Only alphanumeric characters allowed, at least 8 characters long" required>
+
+            <!-- Confirm Password Field -->
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required oninput="checkPasswordMatch()">
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required>
+
+            <!-- Page Rating Field -->
+            <label for="pageRating">Page Rating:</label>
+            <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" oninput="updateRatingValue()">
+            <span id="ratingValue">1</span>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Anzehla Wolfley - Utah, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- JavaScript for Password Matching and Rating Display -->
+    <script>
+        function checkPasswordMatch() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match. Please try again.");
+                document.getElementById("password").value = "";
+                document.getElementById("confirmPassword").value = "";
+                document.getElementById("password").focus();
+            }
+        }
+
+        function updateRatingValue() {
+            document.getElementById("ratingValue").innerText = document.getElementById("pageRating").value;
+        }
+    </script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>

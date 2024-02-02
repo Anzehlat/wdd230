@@ -1,4 +1,3 @@
-/* Reset some default styles */
 body, h1, p, ul {
     margin: 0;
     padding: 0;
@@ -101,13 +100,11 @@ nav a {
 	font-size: 2rem;
 }
 
-/* Style the form container */
 form {
     max-width: 400px;
     margin: 0 auto;
 }
 
-/* Apply spacing between form elements */
 label {
     display: block;
     margin-bottom: 8px;
@@ -118,14 +115,12 @@ button {
     margin-bottom: 16px;
 }
 
-/* Apply root-level CSS variables */
 :root {
     --primary-color: #246655;
     --background-color: #f2f2f2;
     --border-radius: 4px;
 }
 
-/* Apply styles using the defined CSS variables */
 body {
     background-color: var(--background-color);
 }

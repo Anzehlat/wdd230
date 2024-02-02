@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="styles/formLarge.css">
     <title>Web Form</Form></title>
+    <meta name="description" content="Anzehla Wolfley - WDD 230 - Web Frontend Development">
+    <meta name="author" content="Anzehla Wolfley">
 </head>
 <body>
-    <!-- Header and Navigation -->
     <header>
         <img src="images/ProfilePic.jpg" alt="Anzehla Wolfley's Profile Image">
         <span>Anzehla Wolfley</span>
@@ -27,43 +28,34 @@
         </ul>
     </nav>
 
-    <!-- Main Content -->
     <main>
         <h1>Web Form</h1>
-        <form action="record.html" method="get">
-            <!-- Username Field -->
+        <form action="action.html" method="get">
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
 
-            <!-- Password Field -->
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]+" title="Only alphanumeric characters allowed, at least 8 characters long" required>
 
-            <!-- Confirm Password Field -->
             <label for="confirmPassword">Confirm Password:</label>
             <input type="password" id="confirmPassword" name="confirmPassword" required oninput="checkPasswordMatch()">
 
-            <!-- Email Field -->
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required>
 
-            <!-- Page Rating Field -->
             <label for="pageRating">Page Rating:</label>
             <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" oninput="updateRatingValue()">
             <span id="ratingValue">1</span>
 
-            <!-- Submit Button -->
             <button type="submit">Submit</button>
         </form>
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; <span id="currentYear"></span> Anzehla Wolfley - Utah, USA</p>
         <p id="lastModified"></p>
     </footer>
 
-    <!-- JavaScript for Password Matching and Rating Display -->
     <script>
         function checkPasswordMatch() {
             var password = document.getElementById("password").value;

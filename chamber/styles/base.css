@@ -175,6 +175,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -183,6 +184,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+    background-color: #294161;
 }
 
 form {

@@ -2,39 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Pleasant Grove Chamber of Commerce" />
-    <meta property="og:type" content="Website" />
-    <meta property="og:image" content="images/pleasantgrove.jpg" />
-    <meta property="og:url" content="https://anzehlat.github.io/wdd230/" />
-    <title>Anzehla Wolfley - WDD 230 - Web Frontend Development</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Anzehla Wolfley - WDD 230 - Web Frontend Development">
     <meta name="author" content="Anzehla Wolfley">
+    <meta property="og:title" content="Pleasant Grove Chamber of Commerce">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="https://www.plgrove.org/">
+    <meta property="og:url" content="https://anzehlat.github.io/wdd230/">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="icon" href="images/PGviking.ico">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" media="screen and (min-width: 768px)" href="styles/larger.css">
-    <link rel="script" href="scripts/getDates.js">
+    <link rel="stylesheet" media="(min-width: 768px)" href="styles/larger.css">
+    <title>Pleasant Grove Chamber of Commerce</title>
 </head>
 <body>
     <header>
-        <img src="images/ProfilePic.jpg" alt="Anzehla Wolfley's Profile Image">
-        <span>Anzehla Wolfley</span>
-        <h1>Join Us</h1>
-        <button id="mode">&#127769;</button> 
+        <section class="hero">
+            <img src="images/PgHeroImage.jpg" alt="Hero Image">
+        </section>
     </header>
-
     <nav>
         <button id="hamburgerButton">&#8801;</button>
         <ul class="menuLinks">
             <li><a href="index.html">Home</a></li>
-            <li><a href="chamber/index.html">Chamber</a></li>
-            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="chamber/discover.html">Discover</a></li>
-            <li><a href="form.html">Form</a></li>
-            <li><a href="week02/design.html">Design</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
+<body>
     <main>
         <body>
             <div class="container">
@@ -78,36 +74,27 @@
                     <ul>
                         <li>NP Membership: No fee, basic benefits</li>
                         <li>Bronze Membership: Increased benefits</li>
-                        <li>Silver Membership: More benefits</li>
-                        <li>Gold Membership: Premium benefits</li>
+                        <li>Silver Membership: Premium benefits</li>
+                        <li>Gold Membership: Deluxe benefits</li>
                     </ul>
                 </div>
             </div>
         </body>
     </main>
+</body>
+<footer>
+    <address>
+        <p>Contact us at: PgChamber@gmail.com | Phone: (801) 123-4567</p>
+    </address>
 
-    <footer>
-        <p>&copy; <span id="currentYear"></span> Anzehla Wolfley - Utah, USA</p>
-        <p id="lastModified"></p>
-    </footer>
+    <p>Developed by: Anzehla Wolfley</p>
+    <p>Project for WDD 230</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
 
-    <script src="scripts/getDates.js"></script>
+    <p>&copy; <span id="currentYear"></span> Anzehla Wolfley - Utah</p>
+</footer>
 
-    <script>
-        if (typeof(Storage) !== "undefined") {
-            var visitCount = localStorage.getItem("visitCount");
-
-            if (visitCount === null) {
-                visitCount = 0;
-            }
-
-            visitCount++;
-            localStorage.setItem("visitCount", visitCount);
-
-            document.getElementById("visitCount").innerHTML = visitCount;
-        } else {
-            document.getElementById("pageVisitCounter").innerHTML = "Page visits: localStorage not supported.";
-        }
-    </script>
+<script src="scripts/chamber.js"></script>
 </body>
 </html>
+

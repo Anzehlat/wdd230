@@ -3,6 +3,12 @@ const currentYear = new Date().getFullYear();
 document.getElementById('currentYear').textContent = currentYear;
 document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Set current timestamp in the hidden field
+    const timestampField = document.getElementById('timestamp');
+    const currentTimestamp = new Date().toISOString();
+    timestampField.value = currentTimestamp;
+});
 
 const hamburgerButton = document.getElementById('hamburgerButton');
 const navElement = document.querySelector('.menuLinks');

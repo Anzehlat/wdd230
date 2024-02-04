@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Pleasant Grove Chamber of Commerce" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:image" content="images/pleasantgrove.jpg" />
+    <meta property="og:url" content="https://anzehlat.github.io/wdd230/" />
+    <title>Anzehla Wolfley - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Anzehla Wolfley - WDD 230 - Web Frontend Development">
+    <meta name="author" content="Anzehla Wolfley">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <link rel="icon" href="images/PGviking.ico">
+    <link rel="script" href="scripts/getDates.js">
+</head>
+<body>
+    <div class="thankyou-container">
+        <h1>Thank You!</h1>
+        <p>Your form has been successfully submitted.</p>
+        <p>We appreciate your interest and will get back to you as soon as possible.</p>
+        <p>Have a great day!</p>
+        <p></p>
+        <p>- Pleasant Grove's Chamber of Commerce </p>
+    </div>
+
+<script src="scripts/getDates.js"></script>
+
+<script>
+    if (typeof(Storage) !== "undefined") {
+        var visitCount = localStorage.getItem("visitCount");
+
+        if (visitCount === null) {
+            visitCount = 0;
+        }
+
+        visitCount++;
+        localStorage.setItem("visitCount", visitCount);
+
+        document.getElementById("visitCount").innerHTML = visitCount;
+    } else {
+        document.getElementById("pageVisitCounter").innerHTML = "Page visits: localStorage not supported.";
+    }
+</script>
+</body>
+</html>

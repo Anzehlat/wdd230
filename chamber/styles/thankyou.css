@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #356129;
+}
+
+.thankyou-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #294161;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    .thankyou-container {
+        margin: 50px auto;
+    }
+}

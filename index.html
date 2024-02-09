@@ -54,6 +54,7 @@
 
         <section class="card">
             <h2>Learning Activities</h2>
+            <ul id="activityLinks"></ul>
             <ul>
                 <li><a href="week01/chamber-site-plan.html">W01: Site Plan</a></li>
                 <li><a href="week01/holygrail.html">W01: Holy grail</a></li>
@@ -73,12 +74,13 @@
             </ul>
         </section>
 
-        <section class="card">
-            <h2>Information</h2>
-            <p>Pleasant Grove, Utah</p>
-            <p>Weather: Expect Snow</p>
-            <p>Number of Visits: 100</p>
+        <section class="card" id="weatherCard">
+            <h2>Weather Information</h2>
+            <p>Temperature: <span id="temperature">Loading...</span></p>
+            <p>Description: <span id="weatherDescription">Loading...</span></p>
+            <img id="weatherIcon" alt="Weather Icon" src="">
         </section>
+
 
          <p id="pageVisitCounter">Page visits: <span id="visitCount">0</span></p>
     </main>
@@ -116,5 +118,6 @@
             document.getElementById("pageVisitCounter").innerHTML = "Page visits: localStorage not supported.";
         }
     </script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

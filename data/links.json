@@ -1,0 +1,12 @@
+{
+    "weeks": [
+      {
+        "week": "Week 1",
+        "links": [
+          {"url": "week1/index.html", "title": "Introduction to Web Development"},
+          {"url": "week1/exercise.html", "title": "HTML Exercise"}
+        ]
+      }
+    ]
+  }
+  

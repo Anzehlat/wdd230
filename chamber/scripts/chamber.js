@@ -73,13 +73,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const gridView = document.getElementById("gridView");
   const listView = document.getElementById("listView");
 
-  // Load members data from JSON file
   fetch('data/members.json')
     .then(response => response.json())
     .then(data => {
       displayMembers(data.members);
 
-      // Toggle view based on user selection
       gridView.addEventListener("change", () => {
         membersContainer.classList.remove("list-view");
         membersContainer.classList.add("grid-view");

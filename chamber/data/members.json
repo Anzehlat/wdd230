@@ -1,0 +1,58 @@
+{
+    "members": [
+      {
+        "name": "American Biotech Labs",
+        "address": "1306 S 630 E, American Fork ",
+        "phone": "8017630987",
+        "website": "http://www.ablmfg.com",
+        "image": "images/ABLimage.jpg",
+        "membership_level": "Gold"
+      },
+
+      {
+        "name": "Blue Raven Solar",
+        "address": "1403 N Research Way, Orem",
+        "phone": "8554515465",
+        "website": "http://www.blueravensolar.com",
+        "image": "companylogo.jpg",
+        "membership_level": "Silver"
+      },
+
+      {
+        "name": "Rad Swim",
+        "address": "5509 W 11000 N, Highland",
+        "phone": "8013787924",
+        "website": "http://www.radswim.com",
+        "image": "companylogo.jpg",
+        "membership_level": "Silver"
+      },
+
+      {
+        "name": "Mountain West Pilates",
+        "address": "793 S Main St",
+        "phone": "8018999630",
+        "website": "http://www.mountainwestpilates.com",
+        "image": "companylogo.jpg",
+        "membership_level": "Gold"
+      },
+
+      {
+        "name": "Labrynth",
+        "address": "635 N 1700 W, Lindon",
+        "phone": "8018545151",
+        "website": "http://www.labrynthrealitygames.com",
+        "image": "companylogo.jpg",
+        "membership_level": "Bronze"
+      },
+    
+      {
+        "name": "Fox Hollow",
+        "address": "1400 N 200 E, American Fork",
+        "phone": "8017563594",
+        "website": "http://www.foxhollowutah.com",
+        "image": "companylogo.jpg",
+        "membership_level": "Bronze"
+      }
+    ]
+  }
+  

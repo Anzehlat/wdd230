@@ -169,6 +169,36 @@ main {
     margin: 0 auto;
     padding: 20px;
 }
+  
+  .toggle-view {
+    margin-bottom: 10px;
+  }
+  
+  #membersContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  #membersContainer.list-view {
+    display: block;
+  }
+  
+  .member-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .member-list-item {
+    margin-bottom: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
 
 body {
     font-family: sans-serif;

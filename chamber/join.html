@@ -9,15 +9,18 @@
     <meta property="og:type" content="Website">
     <meta property="og:image" content="https://www.plgrove.org/">
     <meta property="og:url" content="https://anzehlat.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="icon" href="images/PGviking.ico">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" media="(min-width: 768px)" href="styles/larger.css">
     <title>Pleasant Grove Chamber of Commerce</title>
+    <script defer src="scripts/openweathermap.js"></script>
+    <script defer src="scripts/banner.js"></script>
 </head>
 <body>
     <header>
-        <section class="hero">
-            <img src="images/PgHeroImage.jpg" alt="Hero Image">
+        <section class="topnav">
+            <img src="images/Silver.png" alt="logo">
         </section>
     </header>
     <nav>
@@ -25,69 +28,76 @@
         <ul class="menuLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
         </ul>
     </nav>
-    <div class="container">
-        <form id="membershipForm" action="thankyou.html" method="get">
-            <label for="firstName">Applicant's First Name:</label>
-            <input type="text" id="firstName" name="firstName" required>
+    <main>
+        <div class="membercontainer">
+
+            <form id="membershipForm" action="thankyou.html" method="get">
+                <h1>Membership Form</h1>
+                <label for="firstName">Applicant's First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            
+                <label for="lastName">Applicant's Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            
+                <label for="position">Title or Position:</label>
+                <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" title="Only alphabets, hyphens, and spaces are allowed with a minimum of seven characters">
+            
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="youremail@example.com">
+            
+                <label for="phone">Mobile Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            
+                <label for="orgName">Business/Organization Name:</label>
+                <input type="text" id="orgName" name="orgName" required>
         
-            <label for="lastName">Applicant's Last Name:</label>
-            <input type="text" id="lastName" name="lastName" required>
-        
-            <label for="position">Title or Position:</label>
-            <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" title="Only alphabets, hyphens, and spaces are allowed with a minimum of seven characters">
-        
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required placeholder="myemail@example.com">
-        
-            <label for="phone">Mobile Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-        
-            <label for="orgName">Business/Organization Name:</label>
-            <input type="text" id="orgName" name="orgName" required>
-    
-            <label for="membershipLevel">Membership Level:</label>
-            <select id="membershipLevel" name="membershipLevel">
-                <option value="NP">NP Membership (No Fee)</option>
-                <option value="Bronze">Bronze Membership</option>
-                <option value="Silver">Silver Membership</option>
-                <option value="Gold">Gold Membership</option>
-            </select>
-        
-            <label for="orgDescription">Business/Organization Description:</label>
-            <textarea id="orgDescription" name="orgDescription"></textarea>
-        
-            <input type="hidden" id="timestamp" name="timestamp" value="">
-        
-            <input type="submit" value="Submit">
-        </form>
-        
-        <div class="membershipBenefits">
-            <h3>Membership Benefits:</h3>
-            <ul>
-                <li>NP Membership: No fee, basic benefits</li>
-                <li>Bronze Membership: Increased benefits</li>
-                <li>Silver Membership: Premium benefits</li>
-                <li>Gold Membership: Deluxe benefits</li>
-            </ul>
+                <label for="membershipLevel">Membership Level:</label>
+                <select id="membershipLevel" name="membershipLevel">
+                    <option value="NP">NP Membership (No Fee)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+            
+                <label for="orgDescription">Business/Organization Description:</label>
+                <textarea id="orgDescription" name="orgDescription"></textarea>
+            
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+            
+                <input type="submit" value="Submit">
+            </form>
+
+            <div class="membershipBenefits">
+                <h3>Membership Benefits:</h3>
+                <ul>
+                    <li>NP Membership: No fee, basic benefits</li>
+                    <li>Bronze Membership: Increased benefits</li>
+                    <li>Silver Membership: Premium benefits</li>
+                    <li>Gold Membership: Deluxe benefits</li>
+                </ul>
+            </div>
         </div>
-    </div>
-<footer>
-    <address>
-        <p>Contact us at: PgChamber@gmail.com | Phone: (801) 123-4567</p>
-    </address>
+    </main>
+    <footer>
+        <address>
+            <img src="images/Silver.png" alt="logo"
+            <p>Contact us at: PgChamber@example.com | Phone: (801) 123-4567</p>
+        </address>
 
-    <p>Developed by: Anzehla Wolfley</p>
-    <p>Project for WDD 230</p>
-    <p>Last Modified: <span id="lastModified"></span></p>
+        <p>Developed by: Anzehla Wolfley</p>
+        <p>Project for WDD 230</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
 
-    <p>&copy; <span id="currentYear"></span> Anzehla Wolfley - Utah</p>
-</footer>
+        <p>&copy; <span id="currentYear"></span> Anzehla Wolfley - Utah</p>
+    </footer>
 
-<script src="scripts/chamber.js"></script>
+    <script src="scripts/chamber.js"></script>
+    <script defer src="scripts/banner.js"></script>
 </body>
 </html>
+
 

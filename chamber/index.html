@@ -14,11 +14,13 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" media="(min-width: 768px)" href="styles/larger.css">
     <title>Pleasant Grove Chamber of Commerce</title>
+    <script defer src="scripts/openweathermap.js"></script>
+    <script defer src="scripts/banner.js"></script>
 </head>
 <body>
     <header>
-        <section class="hero">
-            <img src="images/PgHeroImage.jpg" alt="Hero Image">
+        <section class="topnav">
+            <img src="images/Silver.png" alt="logo">
         </section>
     </header>
     <nav>
@@ -26,35 +28,59 @@
         <ul class="menuLinks">
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
         </ul>
     </nav>
     <main>
+
+        <section class="hero">
+            <img src="images/PgHeroImage.jpg" alt="Hero Image">
+        </section>
+
+        <div id="meetAndGreetBanner" class="banner">
+            <p>Join us for the Chamber of Commerce Meet and Greet on Wednesday,  February 21st at 7:00pm!</p>
+            <button id="closeBannerBtn">Close</button>
+        </div>
+
         <section class="join-link">
-            <h1>Welcome to Pleasant Grove's Chamber of Commerce!</h1>
+            <h1>Want to Become a Member? Join the Fun!</h1>
         <a href="join.html" class="join-link">Join the Chamber of Commerce</a>
         </section>
 
         <section class="card">
             <h2>Current Events</h2>
-            <p>Event 1....</p>
-            <p>Event 2....</p>
+            <p>Awards Gala on February 24, 2024!</p>
+            <p>We are so excited to honor our amazing businesses that have stood out over the last year and want to share the evening with you! Come out to our black tie event to support your local businesses and participate in our silent auction where the proceeds will be donated to a local organization or non-profit!</p>
         </section>
         
-        <section class="card">
+        <section class="card" id="weatherCard">
             <h2>Weather</h2>
-            <p>Current Weather: 44°, Mostly Cloudy</p>
+            <p id="weatherInfo">Loading Weather...</p>
         </section>
 
         <section class="card">
-            <h2>Company Spotlights</h2>
-            <p>Spotlight 1...</p>
-            <p>Spotlight 2...</p>
+            <h2>Spotlight Companies</h2>
+            <img src="images/bigd.jpg" alt="Big-D Construction">
+            <p>Big-D Construction</p>
+            <a href="www.big-d.com">big-d.com</a>
+            <p>1788 W 200 N, Lindon, UT 84042</p>
+            <p>(801) 769-7300</p>
+            <img src="images/r&r.png" alt="R&R BBQ">
+            <p>R&R Barbeque</p>
+            <a href="https://randrbbq.com">randrbbq.com</a>
+            <p>1977 Pleasant grove Boulevard, Pleasant Grove, UT 84062</p>
+            <p>(801) 268-4455</p>
+            <img src="images/crumbl.png" alt="Crumbl Cookies">
+            <p>Crumbl Cookies</p>
+            <a href="https://crumblcookies.com">crumblcookies.com</a>
+            <p>2470 W 600 N, Lindon, UT 84042</p>
+            <p>(801) 609-1960</p>
         </section>
     </main>
     <footer>
         <address>
+            <img src="images/Silver.png" alt="logo"
             <p>Contact us at: PgChamber@example.com | Phone: (801) 123-4567</p>
         </address>
 
@@ -66,5 +92,7 @@
     </footer>
 
     <script src="scripts/chamber.js"></script>
+    <script defer src="scripts/banner.js"></script>
+    <script src="scripts/openweathermap.js"></script>
 </body>
 </html>

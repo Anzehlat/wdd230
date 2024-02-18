@@ -3,10 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }  
-
+/*homepage*/
 body {
     font-family: 'playfair display', serif;
-    background-color: #294161;
+    background-color: #a5c2e7;
     color: #fff;
     margin: 0;
     text-align: center;
@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #356129;
+    background-color: #566bac;
     color: white;
     font-family: 'Times New Roman', Times, serif;
     padding: 20px;
@@ -33,27 +33,211 @@ header span {
     height: auto;
     max-width: 100%;
     display: block;
-    margin: 0 auto;
+    margin: 0%;
+}
+
+.topnav img {
+    display: block;
+    margin-left: 45%;
+    margin-top: 2%;
 }
 
 nav {
-    background-color: #356129;
+    background-color: #566bac;
+    color: #fff;
     padding: 10px;
+    
+}
+
+h2 {
+    padding-bottom: 2%;
+}
+
+.banner {
+    margin-top: 2%;
+    color: #566bac;
+    font-size: medium;
+    font-style:initial;
+}
+
+.card img {
+    border-radius: 5%;
+    padding: 3%;
 }
 
 .join-link {
     text-align: center;
+    font-size:larger;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #294161;
-    padding: 20px;
-    margin-top: 20px;
+    background-color: #566bac;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 5%;
 }
 
+address img {
+    display: block;
+    margin-left: 42%;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    max-width: 15%;
+}
+
+/*discover page*/
+.card1 {
+    display: inline-block;
+    background-color: #566bac;
+    max-width: 45%;
+    padding: 20px;    
+    margin-left: 60%;
+}
+
+.calendar {
+    background-color: #566bac;
+    padding: 5%;
+    display: block;
+}
+
+.support {
+    background-color: #566bac;
+    padding: 2%;
+    text-align: center;
+    padding-bottom: 10%;
+    display: block;
+    max-width: 59%;
+    margin-top: -151.5%;
+    margin-right: 10%;
+}
+
+.support h1 {
+    text-align: center;
+}
+
+.newsletters {
+    background-color: #566bac;
+    display: block;
+    padding: 5%;
+    text-align: center;
+    max-width: 59%;
+    margin-top: -90%;
+    margin-right: 10%;
+}
+
+.newsletters li a {
+    color: #a5c2e7;
+    padding: 3%
+}
+
+.newsletters p {
+    padding: 2%;
+}
+
+.month {
+    font-size:x-large;
+    padding: 70px 25px;
+    width: 100%;
+    background: #a5c2e7;
+    text-align: center;
+  }
+  
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  .weekdays {
+    margin: 0;
+    padding: 5%;
+    background-color:#ddd;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13%;
+    color: #000000;
+    text-align: center;
+  }
+  
+  .days {
+    padding: 10px;
+    background: #eee;
+    margin: 0;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 12%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #000000;
+  }
+  
+  .days li .active {
+    padding: 5px;
+    background: #566bac;
+    color: white !important
+  }
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .calendar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .support {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .newsletters {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .calendar {
+      text-align: center;
+      float: none;
+    }
+    .support {
+        text-align: center;
+        float: none;
+    }
+    .newsletters {
+        text-align: center;
+        float: none;
+    }
+  }
+
+/*menu links*/
 .menuLinks {
     display:flex;
 }
@@ -64,7 +248,7 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #294161;
+    background-color: #566bac;
     padding: 20px;
     position: absolute;
     top: 60px;
@@ -74,16 +258,16 @@ nav {
 
 
 #hamburgerButton {
-    font-size: 2rem;
+    font-size: 2.5rem;
     background: none;
     border: none;
     color: #fff;
     cursor: pointer;
     width: 44px;
-    padding: .25rem 2vw;
+    padding:0%;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 7%;
+    right: 2%;
     display: block;
 }
 
@@ -158,13 +342,13 @@ nav a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #294161;
+    background-color: #566bac;
     padding: 20px;
     margin-top: 20px;
 }
 
 main {
-    background-color: #356129;
+    background-color: #a5c2e7;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -185,7 +369,6 @@ main {
   }
   
   .member-card {
-    border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
   }
@@ -206,24 +389,31 @@ body {
     padding: 0;
 }
 
-.container {
+/*join.html*/
+.membercontainer {
     max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 3px solid #ccc;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    background-color: #294161;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 3%;
+    background-color: #566bac;
+    text-align: left;
 }
 
-form {
+.membercontainer form {
     grid-column: span 1;
+    display: block;
+    align-items: center;
+    padding: 5%;
+    text-align: center;
+    font-size:large;
 }
 
 .membershipBenefits {
+    display: block;
     grid-column:inherit;
     margin-top: 20px;
+    text-align: center;
+    font-size: larger;
 }
 
 label {
@@ -305,7 +495,7 @@ main {
 
 footer {
     font-family: 'Roboto', sans-serif;
-    background-color: #356129;
+    background-color: #566bac;
     color: #fff;
     padding: 10px;
     text-align: center;

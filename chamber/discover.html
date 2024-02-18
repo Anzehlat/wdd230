@@ -14,43 +14,118 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" media="(min-width: 768px)" href="styles/larger.css">
     <title>Pleasant Grove Chamber of Commerce</title>
+    <script defer src="scripts/openweathermap.js"></script>
+    <script defer src="scripts/banner.js"></script>
 </head>
 <body>
     <header>
-        <section class="hero">
-            <img src="images/PgHeroImage.jpg" alt="Hero Image">
+        <section class="topnav">
+            <img src="images/Silver.png" alt="logo">
         </section>
     </header>
     <nav>
         <button id="hamburgerButton">&#8801;</button>
         <ul class="menuLinks">
             <li><a href="index.html">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
         </ul>
     </nav>
     <main>
-        <div class="image" data-src="images/pg1 (1).jpg" data-caption="G Mountain">
-            <img src="images/pg1 (1).jpg" alt="G Mountain">
-        </div>
-        <div class="image" data-src="images/pg2 (2).jpg" data-caption="Battle Creek">
-            <img src="images/pg2 (1).jpg" alt="Battle Creek">
-        </div>
-        <div class="image" data-src="images/pg3 (3).jpg" data-caption="Pleasant Grove City">
-            <img src="images/pg3 (1).jpg" alt="Pleasant Grove City">
-        </div>
-        <div class="image" data-src="images/pg4 (4).jpg" data-caption="Aerial photo of Pleasant Grove">
-            <img src="images/pg4 (1).jpg" alt="Aerial Photo of Pleasant Grove">
-        </div>
-        <div class="image" data-src="images/pg5 (5).jpg" data-caption="Hiking Spot in Pleasant Grove">
-            <img src="images/pg5 (1).jpg" alt="Hiking Spot in Pleasant Grove">
-        </div>
-        <div class="image" data-src="images/pg6 (6).jpg" data-caption="Main Street Pleasant Grove">
-            <img src="images/pg6 (1).jpg" alt="Main Street Pleasant Grove">
-        </div>
+
+        <section class="hero">
+            <img src="images/PgHeroImage.jpg" alt="Hero Image">
+        </section>
+
+        <section class="card1">
+            <img src="images/pg1 (1).jpg" alt="G Hiking">
+            <img src="images/pg2 (1).jpg" alt="Battlecreek">
+            <img src="images/pg3 (1).jpg" alt="PG mountain">
+            <img src="images/pg4 (1).jpg" alt="PG City">
+            <img src="images/pg5 (1).jpg" alt="PG land">
+            <img src="images/pg6 (1).jpg" alt="PG Main Street">
+        </section>
+
+        <section class="support">
+            <h1>Supporting the Northern Chambers</h1>
+            <p>The Pleasant Grove Chamber of Commerce participates in many combined activities and events with our neighbor chambers, Point of the Mountain Chamber, Eagle Mountain Chamber and the American Fork Chamber of Commerce. Each Chamber is dedicated to it's own members, but also sees the great value in expanding our member networking opportunities. Look through the Events and Programs tab and join us in an even more expansive marketplace for your business.</p>
+        </section>
+
+        <section class="newsletters">
+            <h2>Chambers Newsletters</h2>
+            <p>02/13/2024</p>
+            <li><a href="https://www.chamberorganizer.com/msg_detail.php?mid=165592899">Women in Leadership</a></li>
+            <p>02/05/2024</p>
+            <li><a href="https://www.chamberorganizer.com/msg_detail.php?mid=165242185">Change in Location</a></li>
+            <p>02/02/2024</p>
+            <li><a href="https://www.chamberorganizer.com/msg_detail.php?mid=165149313">Better Prices & Better Networking</a></li>
+            <p>01/29/2024</p>
+            <li><a href="https://www.chamberorganizer.com/msg_detail.php?mid=164928131">Events on the Next Level</a></li>
+        </section>
+    
+        <section class="calendar">
+            <div class="month">
+                <ul>
+                    <li class="prev">&#10094;</li>
+                  <li class="next">&#10095;</li>
+                  <li>February<br><span style="font-size:18px">2024</span></li>
+                </ul>
+              </div>
+
+            <ul class="weekdays">
+                <li>Mo</li>
+                <li>Tu</li>
+                <li>We</li>
+                <li>Th</li>
+                <li>Fr</li>
+                <li>Sa</li>
+                <li>Su</li>
+              </ul>
+              
+              <ul class="days">
+                <li>29</li>
+                <li>30</li>
+                <li>31</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+                <li>13</li>
+                <li>14</li>
+                <li>15</li>
+                <li>16</li>
+                <li>17</li>
+                <li><span class="active">18</span></li>
+                <li>19</li>
+                <li>20</li>
+                <li>21</li>
+                <li>22</li>
+                <li>23</li>
+                <li>24</li>
+                <li>25</li>
+                <li>26</li>
+                <li>27</li>
+                <li>28</li>
+                <li>29</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+              </ul>
+        </section>
+
     </main>
     <footer>
         <address>
+            <img src="images/Silver.png" alt="logo"
             <p>Contact us at: PgChamber@example.com | Phone: (801) 123-4567</p>
         </address>
 
@@ -62,5 +137,6 @@
     </footer>
 
     <script src="scripts/chamber.js"></script>
+    <script defer src="scripts/banner.js"></script>
 </body>
 </html>

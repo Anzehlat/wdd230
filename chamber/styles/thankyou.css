@@ -6,9 +6,11 @@ body {
 }
 
 .thankyou-container {
+    display: block;
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
+    border-radius: 3%;
     background-color: #294161;
     border: 1px solid #ddd;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

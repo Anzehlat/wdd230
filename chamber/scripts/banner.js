@@ -1,4 +1,3 @@
-document.getElementById("timestamp").value = new Date().toISOString();
 document.addEventListener('DOMContentLoaded', function () {
     const meetAndGreetBanner = document.getElementById('meetAndGreetBanner');
     const closeBannerBtn = document.getElementById('closeBannerBtn');
@@ -15,3 +14,5 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+document.getElementById("timestamp").value = new Date().toISOString();

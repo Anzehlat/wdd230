@@ -3,6 +3,8 @@ const city = 'Pleasant Grove';
 const state = 'UT';
 const weatherInfoElement = document.getElementById('weatherInfo');
 
+window.addEventListener('load', funcction());
+
 async function getWeather() {
     try {
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${state}&appid=${apiKey}&units=imperial`);
@@ -21,6 +23,5 @@ async function getWeather() {
         console.error('Error fetching weather data:', error);
         weatherInfoElement.textContent = 'Weather data not available';
     }
-}
-
+} 
 document.addEventListener('DOMContentLoaded', getWeather);

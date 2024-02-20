@@ -1,5 +1,5 @@
 const apiKey = '1fac095749ac46fff75a2ba9755bf75e';
-const city = 'Pleasant Grove';
+const city = 'pleasant grove';
 const state = 'UT';
 const weatherInfoElement = document.getElementById('weatherInfo');
 

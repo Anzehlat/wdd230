@@ -350,24 +350,47 @@ main {
     margin-bottom: 10px;
   }
   
-  #membersContainer {
+  .membersContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
   }
   
-  #membersContainer.list-view {
+  .membersContainer.list-view {
     display: block;
+  }
+
+  .directorycontainer {
+    background-color: #566bac;
+    color: #fff;
   }
   
   .member-card {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add this CSS for list view */
+.member-list-item {
+    border: 1px solid #ccc;
     padding: 10px;
-    text-align: center;
-  }
-  
-  .member-list-item {
     margin-bottom: 10px;
-  }
+    background-color: #fff;
+}
+
+.member-list-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
   
   img {
     max-width: 100%;

@@ -1,51 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const currentYear = new Date().getFullYear();
-    document.getElementById('currentYear').textContent = currentYear;
-
-    document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
-
-    const timestampField = document.getElementById('timestamp');
-    if (timestampField) {
-        const currentTimestamp = new Date().toISOString();
-        timestampField.value = currentTimestamp;
-    }
-
-    const hamburgerButton = document.getElementById('hamburgerButton');
-    const navElement = document.querySelector('.menuLinks');
-    hamburgerButton.addEventListener('click', () => {
-        navElement.classList.toggle('open');
-        hamburgerButton.classList.toggle('open');
-    });
-
-    const modeButton = document.querySelector("#mode");
-    const main = document.querySelector("main");
-    modeButton.addEventListener("click", () => {
-        main.classList.toggle('dark-mode');
-        modeButton.textContent = modeButton.textContent.includes("🕶️") ? "🔆" : "🕶️";
-    });
-
-    const visitMessage = document.getElementById('visitMessage');
-    const visitCount = localStorage.getItem('visitCount');
-    const lastVisit = localStorage.getItem('lastVisit');
-
-    if (visitCount === null) {
-        visitMessage.textContent = 'Welcome! Let us know if you have any questions.';
-    } else {
-        const currentTime = Date.now();
-        const timeDifference = currentTime - lastVisit;
-        const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-
-        if (daysDifference === 0) {
-            visitMessage.textContent = 'Back so soon! Awesome!';
-        } else {
-            const dayPlural = daysDifference === 1 ? 'day' : 'days';
-            visitMessage.textContent = `You last visited ${daysDifference} ${dayPlural} ago.`;
-        }
-    }
-
-    localStorage.setItem('lastVisit', Date.now());
-});
-
 document.addEventListener("DOMContentLoaded", function () {
     const membersContainer = document.getElementById("membersContainer");
     const gridView = document.getElementById("gridView");
@@ -76,13 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
             memberElement.classList.add(membersContainer.classList.contains("grid-view") ? "member-card" : "member-list-item");
 
             memberElement.innerHTML = `
-                <img src="data/images/${member.image}" alt="${member.name} Logo">
-                <h3>${member.name}</h3>
-                <p>${member.address}</p>
-                <p>Phone: ${member.phone}</p>
-                <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
-                <p>Membership Level: ${member.membership_level}</p>
-                <p>${member.additional_info}</p>
+                <div class="member-info-container">
+                    <img src="data/images/${member.image}" alt="${member.name} Logo">
+                    <h3>${member.name}</h3>
+                    <p>${member.address}</p>
+                    <p>Phone: ${member.phone}</p>
+                    <p>Website: <a href="${member.website}" target="_blank">${member.website}</a></p>
+                    <p>Membership Level: ${member.membership_level}</p>
+                    <p>${member.additional_info}</p>
+                </div>
             `;
 
             membersContainer.appendChild(memberElement);

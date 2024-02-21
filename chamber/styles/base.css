@@ -350,59 +350,104 @@ main {
     margin-bottom: 10px;
   }
   
-  .membersContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-  }
-  
-  .membersContainer.list-view {
-    display: block;
-  }
-
-  .directorycontainer {
-    background-color: #566bac;
-    color: #fff;
-  }
-  
-  .member-card {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-gap: 10px;
-    align-items: center;
-    justify-content: center;
+/*directory*/
+.menu {
+	margin: 1rem auto;
+	padding: 0.5rem;
+	background-color: #566bac;
+	text-align: center;
 }
 
-.member-card img {
-    max-width: 100%;
-    height: auto;
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
 }
 
-/* Add this CSS for list view */
-.member-list-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #fff;
+section {
+	padding: 0.5rem;
+	background-color: #eee;
 }
 
-.member-list-item img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;}
 
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+.grid section {
+	text-align: center;
+  background-color: #566bac;
 }
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.grid h3 {
+	font-family: "Caveat", cursive;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #566bac;
+}
+
+.list section:nth-child(odd) {
+	background-color: #294161;
+}
+
+section h3 {
+	font-size: 1.5rem;
+  color: #eee;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+  color: #a5c2e7;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: #a5c2e7;
+	letter-spacing: 1.1pt;
+}
+
+img {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
+}
+
 
 /*join.html*/
 .membercontainer {

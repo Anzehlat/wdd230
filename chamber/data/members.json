@@ -14,7 +14,7 @@
         "address": "1403 N Research Way, Orem",
         "phone": "8554515465",
         "website": "http://www.blueravensolar.com",
-        "image": "companylogo.jpg",
+        "image": "images/blueraven.png",
         "membership_level": "Silver"
       },
 
@@ -23,7 +23,7 @@
         "address": "5509 W 11000 N, Highland",
         "phone": "8013787924",
         "website": "http://www.radswim.com",
-        "image": "companylogo.jpg",
+        "image": "images/radswim.png",
         "membership_level": "Silver"
       },
 
@@ -32,7 +32,7 @@
         "address": "793 S Main St",
         "phone": "8018999630",
         "website": "http://www.mountainwestpilates.com",
-        "image": "companylogo.jpg",
+        "image": "images/mountainwest.png",
         "membership_level": "Gold"
       },
 
@@ -41,7 +41,7 @@
         "address": "635 N 1700 W, Lindon",
         "phone": "8018545151",
         "website": "http://www.labrynthrealitygames.com",
-        "image": "companylogo.jpg",
+        "image": "images/labrynth.png",
         "membership_level": "Bronze"
       },
     
@@ -50,7 +50,7 @@
         "address": "1400 N 200 E, American Fork",
         "phone": "8017563594",
         "website": "http://www.foxhollowutah.com",
-        "image": "companylogo.jpg",
+        "image": "foxhollow.png",
         "membership_level": "Bronze"
       }
     ]
